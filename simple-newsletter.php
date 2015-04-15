@@ -5,7 +5,7 @@
 /*
 Plugin Name: Simple Newsletter
 Description: Plugin de Newsletter com Double Opt-in
-Version: 0.1
+Version: 0.1.1
 Author: Robson Miranda
 */
 
