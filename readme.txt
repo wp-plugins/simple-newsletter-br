@@ -37,7 +37,7 @@ Put your html file on root directory of your theme with the name 'email_template
 = What are the markings of fields that can use the mail template? =
 
 You can use these:
-* To show the logo imageL  {logo}
+* To show the logo image:  {logo}
 * To show the person name : {name}
 * To show the text configured on admin panel: {text_confirmation}
 * To show the link to confirm email: {button}
