@@ -4,11 +4,9 @@
  */
 /*
 Plugin Name: Simple Newsletter
-Plugin URI: http://www.mktvirtual.com.br/
 Description: Plugin de Newsletter com Double Opt-in
 Version: 0.1
 Author: Robson Miranda
-Author URI: http://www.mktvirtual.com.br
 */
 
 require('class_newsletter.php');

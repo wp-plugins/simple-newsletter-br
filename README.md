@@ -1,5 +1,5 @@
 #Simple Newsletter
-* Contributors: Robson Miranda
+* Contributors: ooprogramador
 * Tags: Email, Newsletter, double opt-in, export, Email template
 * Requires at least: 4.0
 * Tested up to: 4.0

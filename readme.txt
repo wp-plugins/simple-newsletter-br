@@ -1,17 +1,19 @@
 === Simple Newsletter ===
-Contributors: Robson Miranda
+Contributors: ooprogramador
+Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
 Tags: Email, Newsletter, double opt-in, export, Email template
 Requires at least: 4.0
 Tested up to: 4.0
-Stable tag: 0.1
+Stable tag: 0.1.1
 License: GPLv2 or later
+
+Simple Newsletter, the easiest method to add newsletter subscription form.
 
 == Description ==
 Simple Newsletter is a plugin to generate a form to newsletter subscription, works with Jquery or without.
 Export all subscribers in csv with name and email, database validation to block two equals email.
 
 == Features ==
-
 * Easy generate form
 * Easy method of configuring.
 * Export name and email in cvs to use in any newsletter system
@@ -19,7 +21,32 @@ Export all subscribers in csv with name and email, database validation to block 
 * Possibility to create your own email template.
 
 == Installation ==
-
-Upload the Simple Newsletter plugin to your blog, Activate it, then enter your preferences (Messages, Double opt-in, Require name...) in the plugin administration panel and put the shortcode where you want show the Simple Newsletter form.
+1. Install the plugin on your Wordpress site and activate it.
+1. Configure the email and error messages.
+1. Put the shortcode where you want show the subscription form.
+1. Done.
 
 Tks for download ;)
+
+== Frequently Asked Questions ==
+
+= How to add my own email template? =
+
+Put your html file on root directory of your theme with the name 'email_template.html'
+
+= What are the markings of fields that can use the mail template? =
+
+You can use these:
+* To show the logo imageL  {logo}
+* To show the person name : {name}
+* To show the text configured on admin panel: {text_confirmation}
+* To show the link to confirm email: {button}
+* To show the site link on footer: {sitelink}
+* To show the sitename: {sitename}
+
+== Screenshots ==
+
+1. Configuration Screen
+2. Configuration Scrren
+3. The view and export screen
+4. The generated form in a post
