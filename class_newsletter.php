@@ -1,5 +1,4 @@
 <?php 
-
 class controllerNewsletter {
 
 	private $queries = array(
@@ -112,7 +111,7 @@ class controllerNewsletter {
 	private function send_confirmation()
 	{
 		$vars = array(
-			'<a href="'. get_home_url() .'?sn_token='. $this->data['hash'] .'">Cliqui aqui para confirmar seu email</a>',
+			'<a href="'. get_home_url() .'?sn_token='. $this->data['hash'] .'">'.__('Clique aqui para confirmar seu email').'</a>',
 			get_option("simplenewsletter_confirmationemail"),
 			get_home_url(),
 			get_bloginfo('name'),
@@ -124,11 +123,10 @@ class controllerNewsletter {
 			plugins_url('images/newsletter.png', __FILE__);
 		}
 
+		$name = '';
 		if(isset($this->data['name']))
 		{
 			$name = $this->data['name'];
-		}else{
-			$name = '';
 		}
 		
 		array_unshift($vars, $logo, $name);
@@ -161,12 +159,12 @@ class controllerNewsletter {
 
 		if(isset($this->data['name']) && empty($this->data['name']))
 		{
-			$this->errors['name'] = 'Informe seu nome';
+			$this->errors['name'] = __('Informe seu nome');
 		}
 
 		if(!is_email($this->data["email"]) || empty($this->data["email"]))
 		{
-			$this->errors['email'] = 'Digite um email válido';
+			$this->errors['email'] = __('Digite um email válido');
 		}
 
 		if(!empty($this->errors))

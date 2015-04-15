@@ -8,7 +8,7 @@ License: GPLv2 or later
 
 == Description ==
 Simple Newsletter is a plugin to generate a form to newsletter subscription, works with Jquery or without.
-Export all subscriber in csv with name and email, database validation to block two equals email.
+Export all subscribers in csv with name and email, database validation to block two equals email.
 
 == Features ==
 
