@@ -3,7 +3,7 @@ Contributors: ooprogramador
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
 Tags: Email, Newsletter, double opt-in, export, Email template
 Requires at least: 4.0
-Tested up to: 4.0
+Tested up to: 4.1.1
 Stable tag: 0.1.1
 License: GPLv2 or later
 
