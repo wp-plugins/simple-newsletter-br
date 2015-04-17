@@ -16,9 +16,9 @@
 						<div class="postbox">
 							<h3><span><?php echo __("Implementação", 'simple-newsletter-br'); ?></span></h3>
 							<div class="inside">
-								<p>Utilize o Shortcode abaixo onde você quer que apareça o formulário da Newsletter</p>
+								<p><?php echo __("Utilize o Shortcode abaixo onde você quer que apareça o formulário da Newsletter", 'simple-newsletter-br'); ?></p>
 								<code>[simplenewsletter]</code>
-								<p>O restante, configure no formulário aqui embaixo.</p>
+								<p><?php echo __("O restante, configure no formulário aqui embaixo.", 'simple-newsletter-br'); ?></p>
 							</div> <!-- .inside -->
 
 						</div> <!-- .postbox -->
@@ -95,15 +95,15 @@
 						<div class="postbox">
 							<h3><span><?php echo __("Fazendo seu próprio template", 'simple-newsletter-br'); ?></span></h3>
 							<div class="inside">
-								<p>Você pode fazer o seu próprio template html para o email, e colocar o arquivo HTML com o nome "email_template.html" na raiz do seu tema.</p>
-								<p>Utilize as seguintes marcações para exibir os dados:</p>
+								<p><?php echo __("Você pode fazer o seu próprio template html para o email, e colocar o arquivo HTML com o nome 'email_template.html' na raiz do seu tema.", 'simple-newsletter-br'); ?></p>
+								<p><?php echo __("Utilize as seguintes marcações para exibir os dados:", 'simple-newsletter-br'); ?></p>
 								<ol>
-									<li>Logotipo: <code>{logo}</code></li>
-									<li>Nome preenchido no formulário: <code>{name}</code></li>
-									<li>Texto do email (Configurado no formulário acima): <code>{text_confirmation}</code></li>
-									<li>Link de confirmação: <code>{button}</code></li>
-									<li>Link do Site: <code>{sitelink}</code></li>
-									<li>Nome do Site: <code>{sitename}</code></li>
+									<li><?php echo __('Logotipo:', 'simple-newsletter-br') ?> <code>{logo}</code></li>
+									<li><?php echo __('Nome preenchido no formulário:', 'simple-newsletter-br') ?> <code>{name}</code></li>
+									<li><?php echo __('Texto do email (Configurado no formulário acima):', 'simple-newsletter-br') ?> <code>{text_confirmation}</code></li>
+									<li><?php echo __('Link de confirmação:', 'simple-newsletter-br') ?> <code>{button}</code></li>
+									<li><?php echo __('Link do site:', 'simple-newsletter-br') ?> <code>{sitelink}</code></li>
+									<li><?php echo __('Nome do Site:', 'simple-newsletter-br') ?> <code>{sitename}</code></li>
 								</ol>
 							</div> <!-- .inside -->
 

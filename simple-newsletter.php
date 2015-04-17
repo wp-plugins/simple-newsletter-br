@@ -21,7 +21,7 @@ if(!class_exists('simpleNewsletter')) {
 		{
 			add_action('admin_menu', array(&$this,'settings'));
 			add_action( 'wp_enqueue_scripts', array(&$this,'scripts' ));
-			add_action('init', array($this, 'load_sn_tranlate'));
+			add_action('init', array(&$this, 'load_sn_tranlate'));
 
 			if(isset($_POST['simplenewsletter']))
 			{
