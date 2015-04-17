@@ -30,7 +30,7 @@
 								<table class="form-table" id="configure">
 									<tbody>
 										<tr valign="top">
-											<th scope="row">Double Opt-in (Confirmação)</th>
+											<th scope="row"><?php echo __('Double Opt-in (Confirmação)', 'simple-newsletter-br') ?></th>
 											<td>
 												<select name="simplenewsletter_dbloptin" class="large-text">
 													<option value='1' <?php selected( get_option("simplenewsletter_dbloptin"), 1, true); ?>><?php echo __("Ativado", 'simple-newsletter-br'); ?></option>
@@ -40,49 +40,49 @@
 										</tr>
 
 										<tr valign="top">
-											<th scope="row">Logo ( URL Completa )</th>
+											<th scope="row"><?php echo __('Logo ( URL Completa )', 'simple-newsletter-br') ?></th>
 											<td>
 												<input name="simplenewsletter_logo" id="" type="text" value="<?php echo get_option("simplenewsletter_logo"); ?>" class="large-text" />
 											</td>
 										</tr>
 
 										<tr valign="top">
-											<th scope="row">Exibir Campo Nome</th>
+											<th scope="row"><?php echo __('Exibir Campo Nome', 'simple-newsletter-br') ?></th>
 											<td>
 												<select name="simplenewsletter_showname" class="large-text">
-													<option value='1' <?php selected( get_option("simplenewsletter_showname"), 1, true); ?>>Sim</option>
-													<option value='0' <?php selected( get_option("simplenewsletter_showname"), 0, true); ?>>Não</option>
+													<option value='1' <?php selected( get_option("simplenewsletter_showname"), 1, true); ?>><?php echo __('Sim', 'simple-newsletter-br') ?></option>
+													<option value='0' <?php selected( get_option("simplenewsletter_showname"), 0, true); ?>><?php echo __('Não', 'simple-newsletter-br') ?></option>
 												</select>
 											</td>
 										</tr>
 										
 										<tr valign="top">
-											<th scope="row">Mensagem de Sucesso</th>
+											<th scope="row"><?php echo __('Mensagem de Sucesso', 'simple-newsletter-br') ?></th>
 											<td>
 												<input name="simplenewsletter_successmessage" id="" type="text" value="<?php echo get_option("simplenewsletter_successmessage"); ?>" class="large-text" />
 											</td>
 										</tr>
 										<tr valign="top">
-											<th scope="row">Mensagem após Confirmação</th>
+											<th scope="row"><?php echo __('Mensagem exibida após confirmação', 'simple-newsletter-br') ?></th>
 											<td>
 												<input name="simplenewsletter_confirmedmessage" id="" type="text" value="<?php echo get_option("simplenewsletter_confirmedmessage"); ?>" class="large-text" />
 											</td>
 										</tr>
 
 										<tr valign="top">
-											<th scope="row">Texto do Email</th>
+											<th scope="row"><?php echo __('Texto do Email', 'simple-newsletter-br') ?></th>
 											<td>
 												<input name="simplenewsletter_confirmationemail" id="" type="text" value="<?php echo get_option("simplenewsletter_confirmationemail"); ?>" class="large-text" />
 											</td>
 										</tr>
 
 										<tr valign="top">
-											<th scope="row">Exibir Mensagem <br/>(Somente com Ajax)</th>
+											<th scope="row"><?php echo __('Exibir mensagem', 'simple-newsletter-br') ?></th>
 											<td>
 												<select name="simplenewsletter_showon" class="large-text">
-													<option value='prepend' <?php selected( get_option("simplenewsletter_showon"), 'prepend', true); ?>>Acima do Formulário</option>
-													<option value='append' <?php selected( get_option("simplenewsletter_showon"), 'append', true); ?>>Abaixo do formulário</option>
-													<option value='substitute' <?php selected( get_option("simplenewsletter_showon"), 'substitute', true); ?>>Substituir Formulário</option>
+													<option value='prepend' <?php selected( get_option("simplenewsletter_showon"), 'prepend', true); ?>><?php echo __('Acima do formulário', 'simple-newsletter-br') ?></option>
+													<option value='append' <?php selected( get_option("simplenewsletter_showon"), 'append', true); ?>><?php echo __('Abaixo do Formulário', 'simple-newsletter-br') ?></option>
+													<option value='substitute' <?php selected( get_option("simplenewsletter_showon"), 'substitute', true); ?>><?php echo __('Substituir Formulário', 'simple-newsletter-br') ?></option>
 												</select>
 											</td>
 										</tr>

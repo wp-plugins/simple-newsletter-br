@@ -1,5 +1,5 @@
 === Simple Newsletter ===
-Contributors: ooprogramador
+Contributors: Robson Miranda
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
 Tags: Email, Newsletter, double opt-in, export, Email template
 Requires at least: 4.0

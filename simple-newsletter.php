@@ -8,6 +8,7 @@ Description: Plugin de Newsletter com Double Opt-in
 Version: 0.1.1
 Author: Robson Miranda
 Text Domain: simple-newsletter-br
+Domain Path: /languages
 */
 
 require('class_newsletter.php');
@@ -20,6 +21,7 @@ if(!class_exists('simpleNewsletter')) {
 		{
 			add_action('admin_menu', array(&$this,'settings'));
 			add_action( 'wp_enqueue_scripts', array(&$this,'scripts' ));
+			add_action('init', array($this, 'load_sn_tranlate'));
 
 			if(isset($_POST['simplenewsletter']))
 			{
@@ -32,6 +34,11 @@ if(!class_exists('simpleNewsletter')) {
 			}
 
 			add_shortcode('simplenewsletter', array(&$this,'generateForm'));
+		}
+
+		public function load_sn_tranlate()
+		{
+			load_plugin_textdomain('simple-newsletter-br', FALSE, dirname(plugin_basename(__FILE__)).'/languages/');
 		}
 
 		/** This method render a submenu on configuration */
