@@ -14,7 +14,7 @@
 					<div class="meta-box-sortables ui-sortable">
 
 						<div class="postbox">
-							<h3><span>Implementação</span></h3>
+							<h3><span><?php echo __("Implementação", 'simple-newsletter-br'); ?></span></h3>
 							<div class="inside">
 								<p>Utilize o Shortcode abaixo onde você quer que apareça o formulário da Newsletter</p>
 								<code>[simplenewsletter]</code>
@@ -24,7 +24,7 @@
 						</div> <!-- .postbox -->
 
 						<div class="postbox">
-							<h3><span>Configurações</span></h3>
+							<h3><span><?php echo __("Configurações", 'simple-newsletter-br'); ?></span></h3>
 							<div class="inside">
 								<p></p>
 								<table class="form-table" id="configure">
@@ -33,8 +33,8 @@
 											<th scope="row">Double Opt-in (Confirmação)</th>
 											<td>
 												<select name="simplenewsletter_dbloptin" class="large-text">
-													<option value='1' <?php selected( get_option("simplenewsletter_dbloptin"), 1, true); ?>>Ativado</option>
-													<option value='0' <?php selected( get_option("simplenewsletter_dbloptin"), 0, true); ?>>Desativado</option>
+													<option value='1' <?php selected( get_option("simplenewsletter_dbloptin"), 1, true); ?>><?php echo __("Ativado", 'simple-newsletter-br'); ?></option>
+													<option value='0' <?php selected( get_option("simplenewsletter_dbloptin"), 0, true); ?>><?php echo __("Desativado", 'simple-newsletter-br'); ?></option>
 												</select>
 											</td>
 										</tr>
@@ -93,7 +93,7 @@
 						</div> <!-- .postbox -->
 
 						<div class="postbox">
-							<h3><span>Fazendo seu próprio template</span></h3>
+							<h3><span><?php echo __("Fazendo seu próprio template", 'simple-newsletter-br'); ?></span></h3>
 							<div class="inside">
 								<p>Você pode fazer o seu próprio template html para o email, e colocar o arquivo HTML com o nome "email_template.html" na raiz do seu tema.</p>
 								<p>Utilize as seguintes marcações para exibir os dados:</p>

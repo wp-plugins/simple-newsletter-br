@@ -10,10 +10,12 @@ License: GPLv2 or later
 Simple Newsletter, the easiest method to add newsletter subscription form.
 
 == Description ==
+
 Simple Newsletter is a plugin to generate a form to newsletter subscription, works with Jquery or without.
 Export all subscribers in csv with name and email, database validation to block two equals email.
 
 == Features ==
+
 * Easy generate form
 * Easy method of configuring.
 * Export name and email in cvs to use in any newsletter system
@@ -25,6 +27,8 @@ Export all subscribers in csv with name and email, database validation to block 
 1. Configure the email and error messages.
 1. Put the shortcode where you want show the subscription form.
 1. Done.
+
+* For now, this requires another plugin to send by SMTP, if not, your email will be classified as SPAM ( This will be fixed soon )
 
 Tks for download ;)
 
@@ -50,3 +54,16 @@ You can use these:
 2. Configuration Scrren
 3. The view and export screen
 4. The generated form in a post
+
+== Changelog ==
+
+= 0.2 =
+* Added i18n
+* Added English Support
+
+= 0.1.1 =
+* Started i18n
+* Fixed some bugs
+
+= 0.1 =
+* First version only in Portuguese (Pt_Br)

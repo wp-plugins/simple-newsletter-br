@@ -2,8 +2,8 @@
 * Contributors: ooprogramador
 * Tags: Email, Newsletter, double opt-in, export, Email template
 * Requires at least: 4.0
-* Tested up to: 4.0
-* Stable tag: 0.1
+* Tested up to: 4.1.1
+* Stable tag: 0.1.1
 * License: GPLv2 or later
 
 ##Description
