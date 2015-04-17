@@ -11,6 +11,7 @@ Simple Newsletter, the easiest method to add newsletter subscription form.
 
 == Description ==
 
+= Now available in English (US) and Portuguese (BR) =
 Simple Newsletter is a plugin to generate a form to newsletter subscription, works with Jquery or without.
 Export all subscribers in csv with name and email, database validation to block two equals email.
 
@@ -21,7 +22,7 @@ Export all subscribers in csv with name and email, database validation to block 
 * Export name and email in cvs to use in any newsletter system
 * Send email requiring email validation, can be disabled.
 * Possibility to create your own email template.
-* Availble in Portuguese (pt_BR) and English (en_US)
+* Available in Portuguese (pt_BR) and English (en_US)
 
 == Installation ==
 1. Install the plugin on your Wordpress site and activate it.
