@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Email, Newsletter, double opt-in, export, Email template
 Requires at least: 4.0
 Tested up to: 4.1.1
-Stable tag: 0.1.1
+Stable tag: 0.2
 License: GPLv2 or later
 
 Simple Newsletter, the easiest method to add newsletter subscription form.
@@ -21,6 +21,7 @@ Export all subscribers in csv with name and email, database validation to block 
 * Export name and email in cvs to use in any newsletter system
 * Send email requiring email validation, can be disabled.
 * Possibility to create your own email template.
+* Availble in Portuguese (pt_BR) and English (en_US)
 
 == Installation ==
 1. Install the plugin on your Wordpress site and activate it.
@@ -40,7 +41,7 @@ Put your html file on root directory of your theme with the name 'email_template
 
 = What are the markings of fields that can use the mail template? =
 
-You can use these:
+=You can use these:=
 * To show the logo image:  {logo}
 * To show the person name : {name}
 * To show the text configured on admin panel: {text_confirmation}
@@ -66,4 +67,4 @@ You can use these:
 * Fixed some bugs
 
 = 0.1 =
-* First version only in Portuguese (Pt_Br)
+* First version only in Portuguese (pt_BR)
