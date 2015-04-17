@@ -1,5 +1,5 @@
 === Simple Newsletter ===
-Contributors: Robson Miranda
+Contributors: ooprogramador
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
 Tags: Email, Newsletter, double opt-in, export, Email template
 Requires at least: 4.0
@@ -41,13 +41,7 @@ Put your html file on root directory of your theme with the name 'email_template
 
 = What are the markings of fields that can use the mail template? =
 
-=You can use these:=
-* To show the logo image:  {logo}
-* To show the person name : {name}
-* To show the text configured on admin panel: {text_confirmation}
-* To show the link to confirm email: {button}
-* To show the site link on footer: {sitelink}
-* To show the sitename: {sitename}
+You can use {logo}, {name}, {text_confirmation}, {button}, {sitelink} and {sitename}
 
 == Screenshots ==
 
