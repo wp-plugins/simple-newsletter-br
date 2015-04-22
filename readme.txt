@@ -1,7 +1,7 @@
 === Simple Newsletter ===
 Contributors: ooprogramador
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
-Tags: Email, Newsletter, double opt-in, export, Email template
+Tags: Newsletter, Email, double opt-in, export, Email template, widget, sidebar, shortcode
 Requires at least: 4.0
 Tested up to: 4.1.2
 Stable tag: 0.3
@@ -23,11 +23,12 @@ Export all subscribers in csv with name and email, database validation to block 
 * Send email requiring email validation, can be disabled.
 * Possibility to create your own email template.
 * Available in Portuguese (pt_BR) and English (en_US)
+* You can use shortcode or widget, you choose ;)
 
 == Installation ==
 1. Install the plugin on your Wordpress site and activate it.
 1. Configure the email and error messages.
-1. Put the shortcode where you want show the subscription form.
+1. Put the shortcode where you want show the subscription form or add a widget to your sidebar.
 1. Done.
 
 * For now, this requires another plugin to send by SMTP, if not, your email will be classified as SPAM ( This will be fixed soon )
@@ -44,6 +45,10 @@ Put your html file on root directory of your theme with the name 'email_template
 
 You can use {logo}, {name}, {text_confirmation}, {button}, {sitelink} and {sitename}
 
+= How do i put the subscription form on my site? =
+
+Its simple, add the shortcode where you want or add the widget to your sidebar
+
 == Screenshots ==
 
 1. Configuration Screen
@@ -52,6 +57,14 @@ You can use {logo}, {name}, {text_confirmation}, {button}, {sitelink} and {siten
 4. The generated form in a post
 
 == Changelog ==
+= Soon =
+* Global SMTP Tool
+
+= 0.4 =
+* Added widget
+* Added spinner while form is submitting
+* Icon and image to plugin page :)
+
 = 0.3 =
 * Translated email subject
 * Fixed i18n, now english is the default language

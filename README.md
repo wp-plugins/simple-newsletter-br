@@ -1,8 +1,8 @@
 #Simple Newsletter
 * Contributors: ooprogramador
-* Tags: Email, Newsletter, double opt-in, export, Email template
+* Tags: Email, Newsletter, double opt-in, export, Email template, sidebar, shortcode
 * Requires at least: 4.0
-* Tested up to: 4.1.1
+* Tested up to: 4.1.2
 * Stable tag: 0.1.1
 * License: GPLv2 or later
 
