@@ -3,8 +3,8 @@ Contributors: ooprogramador
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
 Tags: Email, Newsletter, double opt-in, export, Email template
 Requires at least: 4.0
-Tested up to: 4.1.1
-Stable tag: 0.2
+Tested up to: 4.1.2
+Stable tag: 0.3
 License: GPLv2 or later
 
 Simple Newsletter, the easiest method to add newsletter subscription form.
@@ -52,6 +52,9 @@ You can use {logo}, {name}, {text_confirmation}, {button}, {sitelink} and {siten
 4. The generated form in a post
 
 == Changelog ==
+= 0.3 =
+* Translated email subject
+* Fixed i18n, now english is the default language
 
 = 0.2 =
 * Added i18n
