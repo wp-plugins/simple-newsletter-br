@@ -191,6 +191,47 @@ if(class_exists("simpleNewsletter")){
 	register_activation_hook(__FILE__, array('simpleNewsletter', 'activate'));
 	register_deactivation_hook(__FILE__, array('simpleNewsletter', 'deactivate'));
 	$simpleNewsletter = new simpleNewsletter;
+	add_action( 'widgets_init', 'simplenewsletter_register_widgets' );
 }
 
-?>
+class widgetSimpleNewsletter extends WP_Widget {
+
+	function widgetSimpleNewsletter() {
+		// Instantiate the parent object
+		parent::__construct( false, 'Simple Newsletter', array('description' => __('Add the subscription form on widget area', 'simple-newsletter-br')) );
+	}
+
+	function widget( $args, $instance ) {
+		?>
+		<aside id="simplenewsletter-widget" class="widget">
+			<h2 class="widget-title"><?php echo $instance['title'] ?></h2>
+			<p><?php echo ( isset($instance['boxtext']) && !empty($instance['boxtext']) ) ? $instance['boxtext'] : ''; ?></p>
+			<?php do_shortcode('[simplenewsletter]'); ?>
+		</aside>
+		<?php
+	}
+
+	function update( $new_instance, $old_instance ) {
+		$instance = array();
+		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+		$instance['boxtext'] = ( ! empty( $new_instance['boxtext'] ) ) ? strip_tags( $new_instance['boxtext'] ) : '';
+		return $instance;
+	}
+
+	function form( $instance ) {
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'New title', 'simple-newsletter-br' );
+		$boxtext = ! empty( $instance['boxtext'] ) ? $instance['boxtext'] : __( 'Box Text', 'simple-newsletter-br' );
+		?>
+		<p>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+			<label for="<?php echo $this->get_field_id( 'boxtext' ); ?>"><?php _e( 'Box Text:', 'simple-newsletter-br' ); ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id( 'boxtext' ); ?>" name="<?php echo $this->get_field_name( 'boxtext' ); ?>" type="text" value="<?php echo esc_attr( $boxtext ); ?>">
+		</p>
+		<?php 
+	}
+}
+
+function simplenewsletter_register_widgets() {
+	register_widget( 'widgetSimpleNewsletter' );
+}
