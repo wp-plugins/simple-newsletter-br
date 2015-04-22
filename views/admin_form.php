@@ -16,7 +16,7 @@
 						<div class="postbox">
 							<h3><span><?php echo __("Implementation", 'simple-newsletter-br'); ?></span></h3>
 							<div class="inside">
-								<p><?php echo __("Use the shortcode below where you want to showthe subscription form.", 'simple-newsletter-br'); ?></p>
+								<p><?php echo __("Use the shortcode below where you want to show the subscription form.", 'simple-newsletter-br'); ?></p>
 								<code>[simplenewsletter]</code>
 								<p><?php echo __("The rest , set in the form here below.", 'simple-newsletter-br'); ?></p>
 							</div> <!-- .inside -->
