@@ -111,7 +111,7 @@ class controllerNewsletter {
 	private function send_confirmation()
 	{
 		$vars = array(
-			'<a href="'. get_home_url() .'?sn_token='. $this->data['hash'] .'">'.__('Clique aqui para confirmar seu email').'</a>',
+			'<a href="'. get_home_url() .'?sn_token='. $this->data['hash'] .'">'.__('Click here to confirm your email', 'simple-newsletter-br').'</a>',
 			get_option("simplenewsletter_confirmationemail"),
 			get_home_url(),
 			get_bloginfo('name'),
@@ -147,7 +147,7 @@ class controllerNewsletter {
 			'Content-Type: text/html; charset=UTF-8'
 			);
 
-		wp_mail( $this->data['email'], get_bloginfo('name') . ' - Confirmação de Email', $content, $headers );
+		wp_mail( $this->data['email'], get_bloginfo('name') . ' - ' . __('Email Confirmation', 'simple-newsletter-br'), $content, $headers );
 	}
 
 	private function validate()
@@ -159,12 +159,12 @@ class controllerNewsletter {
 
 		if(isset($this->data['name']) && empty($this->data['name']))
 		{
-			$this->errors['name'] = __('Informe seu nome');
+			$this->errors['name'] = __('Blank name is not allowed', 'simple-newsletter-br');
 		}
 
 		if(!is_email($this->data["email"]) || empty($this->data["email"]))
 		{
-			$this->errors['email'] = __('Digite um email válido');
+			$this->errors['email'] = __('Please inform a valid email', 'simple-newsletter-br');
 		}
 
 		if(!empty($this->errors))

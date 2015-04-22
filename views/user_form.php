@@ -5,13 +5,13 @@
 		{
 			?>
 			<fieldset class='simplenewsleter-field simplenewsleter-field-name'>
-				<input name='simplenewsletter[name]' type='text' placeholder='<?php echo __("Nome", 'simple-newsletter-br') ?>'/>
+				<input name='simplenewsletter[name]' type='text' placeholder='<?php echo __("Name", 'simple-newsletter-br') ?>'/>
 			</fieldset>
 			<?php 
 		} ?>
 		<fieldset class='simplenewsleter-field simplenewsleter-field-email'>
 			<input name='simplenewsletter[email]' type='email' placeholder='<?php echo __("Email", 'simple-newsletter-br') ?>' />
 		</fieldset>
-		<input type="submit" value="<?php echo __("Enviar", 'simple-newsletter-br') ?>" class='simplenewsleter-field-submit' />
+		<input type="submit" value="<?php echo __("Send", 'simple-newsletter-br') ?>" class='simplenewsleter-field-submit' />
 	</form>
 </div>

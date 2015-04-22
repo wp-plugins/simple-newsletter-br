@@ -3,7 +3,7 @@ $emailList = new controllerNewsletter();
 ?>
 <div class="wrap">	
 	<div id="icon-options-general" class="icon32"></div>
-	<h2><?php printf(__("Últimos %d Assinantes da Newsletter", 'simple-newsletter-br'),$emailList->limit) ?></h2>
+	<h2><?php printf(__("Last %d subscriptions", 'simple-newsletter-br'),$emailList->limit) ?></h2>
 	
 	<div id="poststuff">
 
@@ -16,10 +16,10 @@ $emailList = new controllerNewsletter();
 					<thead>
 						<tr>
 							<th>#</th>
-							<th><?php echo __("Nome", 'simple-newsletter-br'); ?></th>
+							<th><?php echo __("Name", 'simple-newsletter-br'); ?></th>
 							<th><?php echo __("Email", 'simple-newsletter-br'); ?></th>
-							<th><?php echo __("Data de Cadastro", 'simple-newsletter-br'); ?></th>
-							<th><?php echo __("Confirmado", 'simple-newsletter-br'); ?></th>
+							<th><?php echo __("Subscription date", 'simple-newsletter-br'); ?></th>
+							<th><?php echo __("Confirmed", 'simple-newsletter-br'); ?></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -43,7 +43,7 @@ $emailList = new controllerNewsletter();
 						{
 							?>
 							<tr>
-								<td colspan="5"><center><?php __("Nenhum assinante encontrado", 'simple-newsletter-br'); ?></center></td>
+								<td colspan="5"><center><?php __("No one subscriber found", 'simple-newsletter-br'); ?></center></td>
 							</tr>
 							<?php
 						}
@@ -58,11 +58,11 @@ $emailList = new controllerNewsletter();
 				
 				<div class="meta-box-sortables">					
 					<div class="postbox">
-						<h3><span><?php echo __("Exportar", 'simple-newsletter-br'); ?></span></h3>
+						<h3><span><?php echo __("Export", 'simple-newsletter-br'); ?></span></h3>
 						<div class="inside">
 							<div>
-								<a href="?sn_export_method=EXPORT_CONFIRMED" class="button-primary"><?php echo __("Confirmados", 'simple-newsletter-br'); ?></a>
-								<a href="?sn_export_method=EXPORT_ALL" class="button-secondary"><?php echo __("Todos", 'simple-newsletter-br'); ?></a>
+								<a href="?sn_export_method=EXPORT_CONFIRMED" class="button-primary"><?php echo __("Confirmed", 'simple-newsletter-br'); ?></a>
+								<a href="?sn_export_method=EXPORT_ALL" class="button-secondary"><?php echo __("All", 'simple-newsletter-br'); ?></a>
 							</div>
 						</div> <!-- .inside -->
 						
@@ -76,9 +76,9 @@ $emailList = new controllerNewsletter();
 						<div class="inside">
 							<div>
 								<?php $total = $emailList->count();?>
-								<p><b><?php echo __("Confirmados", 'simple-newsletter-br'); ?>: </b><?php echo $total[0]['qty_confirmed']; ?></p>
-								<p><b><?php echo __("Não confirmados", 'simple-newsletter-br'); ?>: </b><?php echo $total[0]['qty_unconfirmed']; ?></p>
-								<p><b><?php echo __("Total", 'simple-newsletter-br'); ?>: </b><?php echo ($total[0]['qty_confirmed']+$total[0]['qty_unconfirmed']); ?></p>
+								<p><b><?php echo __("Confirmed", 'simple-newsletter-br'); ?>: </b><?php echo $total[0]['qty_confirmed']; ?></p>
+								<p><b><?php echo __("Not confirmed", 'simple-newsletter-br'); ?>: </b><?php echo $total[0]['qty_unconfirmed']; ?></p>
+								<p><b><?php echo __("All", 'simple-newsletter-br'); ?>: </b><?php echo ($total[0]['qty_confirmed']+$total[0]['qty_unconfirmed']); ?></p>
 							</div>
 						</div> <!-- .inside -->
 						
