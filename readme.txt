@@ -1,10 +1,10 @@
 === Simple Newsletter ===
 Contributors: ooprogramador
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
-Tags: Newsletter, Email, double opt-in, export, Email template, widget, sidebar, shortcode
+Tags: Newsletter, Email, double opt-in, export CSV, Email template, widget, sidebar, shortcode
 Requires at least: 4.0
 Tested up to: 4.1.2
-Stable tag: 0.3
+Stable tag: 0.4
 License: GPLv2 or later
 
 Simple Newsletter, the easiest method to add newsletter subscription form.
