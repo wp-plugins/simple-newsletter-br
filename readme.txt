@@ -63,7 +63,6 @@ Its simple, add the shortcode where you want or add the widget to your sidebar
 = 0.4 =
 * Added widget
 * Added spinner while form is submitting
-* Icon and image to plugin page :)
 
 = 0.3 =
 * Translated email subject

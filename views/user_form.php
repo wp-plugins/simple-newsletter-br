@@ -14,4 +14,7 @@
 		</fieldset>
 		<input type="submit" value="<?php echo __("Send", 'simple-newsletter-br') ?>" class='simplenewsleter-field-submit' />
 	</form>
+	<div class="simplenewsletter_spinner" style="display:none;">
+		<img src="<?php echo plugins_url('../images/loading_spinner.gif', __FILE__) ?>" style="margin-left:45%;">
+	</div>
 </div>

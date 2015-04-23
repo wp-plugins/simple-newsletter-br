@@ -2,6 +2,7 @@ $ = jQuery;
 $(function() {
 	$('#submit_simplenewsletter').submit(function( event ) {
 		event.preventDefault();
+		loading(1);
 		var posting = $.post( '', $(this).serialize() );
 		posting.done(function(e){
 			e = $.parseJSON(e);
@@ -15,7 +16,7 @@ $(function() {
 				});
 
 			}
-			
+			loading(0);			
 		});
 	});
 });
@@ -40,4 +41,18 @@ function showSucess(message)
 		return 0;
 	}
 	
+}
+
+function loading(method)
+{
+	if(method == 0)
+	{
+		$('#submit_simplenewsletter').show();
+		$('.simplenewsletter_spinner').hide();
+		return 0;
+	}
+	$('#submit_simplenewsletter').hide();
+	$('.simplenewsletter_spinner').show();
+	return 0;
+
 }
