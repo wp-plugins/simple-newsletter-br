@@ -12,8 +12,13 @@ Simple Newsletter, the easiest method to add newsletter subscription form.
 == Description ==
 
 = Now available in English (US) and Portuguese (BR) =
+
+= Unlimited subscriptions and is stored in your database =
+
 Simple Newsletter is a plugin to generate a form to newsletter subscription, works with Jquery or without.
+
 Export all subscribers in csv with name and email, database validation to block two equals email.
+
 
 == Features ==
 
