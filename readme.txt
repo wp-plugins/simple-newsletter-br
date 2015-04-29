@@ -3,7 +3,7 @@ Contributors: ooprogramador
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
 Tags: Newsletter, Email, double opt-in, export CSV, Email template, widget, sidebar, shortcode
 Requires at least: 4.0
-Tested up to: 4.2
+Tested up to: 4.2.1
 Stable tag: 0.4
 License: GPLv2 or later
 
@@ -12,8 +12,13 @@ Simple Newsletter, the easiest method to add newsletter subscription form.
 == Description ==
 
 = Now available in English (US) and Portuguese (BR) =
+
+= Unlimited subscriptions and is stored in your database =
+
 Simple Newsletter is a plugin to generate a form to newsletter subscription, works with Jquery or without.
+
 Export all subscribers in csv with name and email, database validation to block two equals email.
+
 
 == Features ==
 
