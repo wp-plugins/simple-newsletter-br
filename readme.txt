@@ -7,7 +7,7 @@ Tested up to: 4.2.1
 Stable tag: 0.4
 License: GPLv2 or later
 
-Simple Newsletter, the easiest method to add newsletter subscription form.
+Simple Newsletter, the easiest method to add newsletter subscription form. UNLIMITED subscriptions and tool to export the subscribers.
 
 == Description ==
 
