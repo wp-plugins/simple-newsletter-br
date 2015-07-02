@@ -1,25 +1,29 @@
 $ = jQuery;
-$(function() {
-	$('#submit_simplenewsletter').submit(function( event ) {
-		event.preventDefault();
-		loading(1);
-		var posting = $.post( '', $(this).serialize() );
-		posting.done(function(e){
-			e = $.parseJSON(e);
-			if(e.success == '1'){
-				message = '<div class="simplenewsletter-success">'+e.message+'</div>';
-				showSucess(message);
-			}else{
-				$("fieldset.simplenewsleter-field span").remove();
-				$.each(e.message,function(field, error) {
-					$(".simplenewsleter-field-"+field).append('<span class="error">'+error+'</span>');
-				});
+function initSimpleNewsletter(element)
+{
+	$(function() {
+		$(element).submit(function( event ) {
+			event.preventDefault();
+			_this= this;
+			loading(_this ,1);
+			var posting = $.post( '', $(this).serialize() );
+			posting.done(function(e){
+				e = $.parseJSON(e);
+				if(e.success == '1'){
+					message = '<div class="simplenewsletter-success">'+e.message+'</div>';
+					showSucess(_this,message);
+				}else{
+					$("fieldset.simplenewsleter-field span").remove();
+					$.each(e.message,function(field, error) {
+						$(element).find(".simplenewsleter-field-"+field).append('<span class="error">'+error+'</span>');
+					});
 
-			}
-			loading(0);			
+				}
+				loading(_this,0);			
+			});
 		});
 	});
-});
+}
 
 function showSucess(message)
 {
@@ -43,16 +47,16 @@ function showSucess(message)
 	
 }
 
-function loading(method)
+function loading(element, method)
 {
 	if(method == 0)
 	{
-		$('#submit_simplenewsletter').show();
-		$('.simplenewsletter_spinner').hide();
+		$(element).show();
+		$(element).find('.simplenewsletter_spinner').hide();
 		return 0;
 	}
-	$('#submit_simplenewsletter').hide();
-	$('.simplenewsletter_spinner').show();
+	$(element).hide();
+	$(element).find('.simplenewsletter_spinner').show();
 	return 0;
 
 }

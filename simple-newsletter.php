@@ -19,9 +19,10 @@ if(!class_exists('simpleNewsletter')) {
 
 		public function __construct()
 		{
-			add_action('admin_menu', array(&$this,'settings'));
+			add_action( 'admin_menu', array(&$this,'settings'));
 			add_action( 'wp_enqueue_scripts', array(&$this,'scripts' ));
-			add_action('init', array(&$this, 'load_sn_tranlate'));
+			add_action( 'admin_enqueue_scripts', 'admin_scripts' );
+			add_action( 'init', array(&$this, 'load_sn_tranlate'));
 
 			if(isset($_POST['simplenewsletter']))
 			{
@@ -42,16 +43,26 @@ if(!class_exists('simpleNewsletter')) {
 		}
 
 		/** This method render a submenu on configuration */
-		public function settings() {
-
+		public function settings()
+		{
 			add_options_page( '', 'Simple Newsletter', 'manage_options', 'simplenewsletter-admin', array( &$this, 'admin_updateSettings' ) );
 			add_menu_page('Newsletter', 'Simple Newsletter', 'administrator', 'simplenewsletter-grid', array(&$this,'admin_gridSubscribers'), 'dashicons-groups');
 		}
 
 		/** Enqueue Scripts on site */
 
-		public function scripts() {
+		public function scripts()
+		{
 			wp_enqueue_script( 'simplenewsletter', plugins_url('js/main.js', __FILE__), array('jquery'));
+		}
+
+		public function admin_scripts()
+		{
+			if( $_GET['page'] != 'simplenewsletter-grid' ){
+				return ;
+			}
+			die('-------------DIE----------');
+			wp_enqueue_script( 'simplenewsletter-admin', plugins_url('js/admin_main.js', __FILE__), array('jquery'));
 		}
 
 		/** Generate the donation form */

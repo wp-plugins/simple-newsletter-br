@@ -1,5 +1,6 @@
 <div class="simplenewsletter" data-showon='<?php echo get_option('simplenewsletter_showon'); ?>'>
-	<form method='POST' id='submit_simplenewsletter'>
+	<?php $formID = uniqid('form_simplenewsletter-'); ?>
+	<form method='POST' id='submit_simplenewsletter' class='<?php echo $formID ?>'>
 		<?php 
 		if(get_option('simplenewsletter_showname') == 1)
 		{
@@ -18,3 +19,6 @@
 		<img src="<?php echo plugins_url('../images/loading_spinner.gif', __FILE__) ?>" style="margin-left:45%;">
 	</div>
 </div>
+<script>
+	initSimpleNewsletter('.<?php echo $formID; ?>');
+</script>
