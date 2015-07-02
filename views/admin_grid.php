@@ -70,16 +70,17 @@ $emailList = new controllerNewsletter();
 
 				<div class="meta-box-sortables">					
 					<div class="postbox">
-						<h3><span><?php echo __("Status", 'simple-newsletter-br'); ?></span></h3>
+						<h3 class='hndle ui-sortable-handle'><span><?php echo __("Status", 'simple-newsletter-br'); ?></span></h3>
 						<div class="inside">
 							<div>
 								<?php $total = $emailList->count();?>
-								<p><b><?php echo __("Confirmed", 'simple-newsletter-br'); ?>: </b><?php echo $total[0]['qty_confirmed']; ?></p>
-								<p><b><?php echo __("Not confirmed", 'simple-newsletter-br'); ?>: </b><?php echo $total[0]['qty_unconfirmed']; ?></p>
+								<p><b><?php echo __("Confirmed", 'simple-newsletter-br'); ?>: </b><?php echo number_format($total[0]['qty_confirmed'], 0, '', '.'); ?></p>
+								<p><b><?php echo __("Not confirmed", 'simple-newsletter-br'); ?>: </b><?php echo number_format($total[0]['qty_unconfirmed'], 0, '', '.'); ?></p>
 								<hr/>
-								<p><b><?php echo __("Yesterday", 'simple-newsletter-br'); ?>: </b><?php echo $total[0]['yesterday']; ?></p>
-								<p><b><?php echo __("Last Week", 'simple-newsletter-br'); ?>: </b><?php echo $total[0]['last_week']; ?></p>
-								<p><b><?php echo __("All Time", 'simple-newsletter-br'); ?>: </b><?php echo ($total[0]['qty_confirmed']+$total[0]['qty_unconfirmed']); ?></p>
+								<p><b><?php echo __("Today", 'simple-newsletter-br'); ?>: </b><?php echo number_format($total[0]['today'], 0, '', '.'); ?></p>
+								<p><b><?php echo __("Yesterday", 'simple-newsletter-br'); ?>: </b><?php echo number_format($total[0]['yesterday'], 0, '', '.'); ?></p>
+								<p><b><?php echo __("Last Week", 'simple-newsletter-br'); ?>: </b><?php echo number_format($total[0]['last_week'], 0, '', '.'); ?></p>
+								<p><b><?php echo __("All Time", 'simple-newsletter-br'); ?>: </b><?php echo number_format(($total[0]['qty_confirmed']+$total[0]['qty_unconfirmed']), 0, '', '.'); ?></p>
 							</div>
 						</div> <!-- .inside -->
 
