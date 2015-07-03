@@ -8,7 +8,7 @@ class controllerNewsletter {
 		'EXPORT_CONFIRMED' => 'SELECT name, email FROM simplenewsletter_subscriptions WHERE confirmed = 1',
 		'CHECK_EMAIL' => 'SELECT email FROM simplenewsletter_subscriptions WHERE email = \'%s\'',
 		'CONFIRM' => 'UPDATE simplenewsletter_subscriptions SET confirmed = 1 where hash = \'%s\'',
-		'COUNT' => 'SELECT (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE confirmed = 1 ) as qty_confirmed, (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE confirmed = 0) as qty_unconfirmed, (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE DATE_SUB(CURDATE(),INTERVAL 1 DAY) = created ) as yesterday, (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE DATE_SUB(CURDATE(),INTERVAL 0 DAY) <= created ) as today, (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE DATE_SUB(CURDATE(),INTERVAL 7 DAY) <= created ) as last_week'
+		'COUNT' => 'SELECT (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE confirmed = 1 ) as qty_confirmed, (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE confirmed = 0) as qty_unconfirmed, (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE DATE(created) = DATE_SUB(CURDATE(),INTERVAL 1 DAY) ) as yesterday, (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE DATE_SUB(CURDATE(),INTERVAL 0 DAY) <= DATE(created) ) as today, (SELECT COUNT(*) from simplenewsletter_subscriptions WHERE DATE_SUB(CURDATE(),INTERVAL 7 DAY) <= DATE(created) ) as last_week'
 		);
 	private $data = array();
 	public $success_message = '';

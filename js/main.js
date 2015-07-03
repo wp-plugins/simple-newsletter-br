@@ -5,7 +5,9 @@ function initSimpleNewsletter(element)
 		$(element).submit(function( event ) {
 			event.preventDefault();
 			_this= this;
+
 			loading(_this ,1);
+
 			var posting = $.post( '', $(this).serialize() );
 			posting.done(function(e){
 				e = $.parseJSON(e);
@@ -25,24 +27,27 @@ function initSimpleNewsletter(element)
 	});
 }
 
-function showSucess(message)
+function showSucess(element, message)
 {
-	var showon = $('.simplenewsletter').data('showon');
+	var showon = $(element).parent().data('showon');
+	$(element).find('.error').remove();
 
-	if( showon == 'append'){
-		$('.simplenewsletter').append(message);
-		return 0;
-	}
+	switch(showon){
+		case 'append':
+			$(element).parent().append(message);
+			return 0;
+		break;
 
-	if(showon == 'prepend'){
-		$('.simplenewsletter').prepend(message);
-		return 0;
-	}
+		case 'prepend':
+			$(element).parent().prepend(message);
+			return 0;
+		break;
 
-	if(showon == 'substitute')
-	{
-		$('.simplenewsletter').html(message);
-		return 0;
+		case 'substitute':
+		default:
+			$(element).parent().html(message);
+			return 0;
+		break;
 	}
 	
 }
@@ -55,6 +60,7 @@ function loading(element, method)
 		$(element).find('.simplenewsletter_spinner').hide();
 		return 0;
 	}
+	
 	$(element).hide();
 	$(element).find('.simplenewsletter_spinner').show();
 	return 0;

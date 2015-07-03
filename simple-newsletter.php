@@ -21,7 +21,7 @@ if(!class_exists('simpleNewsletter')) {
 		{
 			add_action( 'admin_menu', array(&$this,'settings'));
 			add_action( 'wp_enqueue_scripts', array(&$this,'scripts' ));
-			add_action( 'admin_enqueue_scripts', 'admin_scripts' );
+			add_action( 'admin_enqueue_scripts', array(&$this,'admin_scripts' ) );
 			add_action( 'init', array(&$this, 'load_sn_tranlate'));
 
 			if(isset($_POST['simplenewsletter']))
@@ -61,7 +61,7 @@ if(!class_exists('simpleNewsletter')) {
 			if( $_GET['page'] != 'simplenewsletter-grid' ){
 				return ;
 			}
-			die('-------------DIE----------');
+			
 			wp_enqueue_script( 'simplenewsletter-admin', plugins_url('js/admin_main.js', __FILE__), array('jquery'));
 		}
 

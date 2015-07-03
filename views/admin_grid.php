@@ -7,13 +7,15 @@ $emailList = new controllerNewsletter();
 
 	<div class="tablenav top">
 		<div class="alignleft actions bulkactions">
-			<label for="bulk-action-selector-top" class="screen-reader-text"><?php echo __('Export', 'simple-newsletter-br'); ?></label>
-			<select name="action" id="bulk-action-selector-top">
-				<option value="-1"><?php echo __('Export', 'simple-newsletter-br'); ?></option>
-				<option value="?sn_export_method=EXPORT_ALL"><?php echo __('All', 'simple-newsletter-br'); ?></option>
-				<option value="?sn_export_method=EXPORT_CONFIRMED"><?php echo __('Confirmed', 'simple-newsletter-br'); ?></option>
-			</select>
-			<input type="submit" id="doaction" class="button action" value="<?php echo __('Download', 'simple-newsletter-br'); ?>">
+			
+				<label for="bulk-action-selector-top" class="screen-reader-text"><?php echo __('Export', 'simple-newsletter-br'); ?></label>
+				<select name="action" id="exportMethod">
+					<option value="-1"><?php echo __('Export', 'simple-newsletter-br'); ?></option>
+					<option value="?sn_export_method=EXPORT_ALL"><?php echo __('All', 'simple-newsletter-br'); ?></option>
+					<option value="?sn_export_method=EXPORT_CONFIRMED"><?php echo __('Confirmed', 'simple-newsletter-br'); ?></option>
+				</select>
+				<input type="submit" id="doExport" class="button" value="<?php echo __('Download', 'simple-newsletter-br'); ?>">
+			
 		</div>
 		<br class="clear">
 	</div>
