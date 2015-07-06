@@ -58,7 +58,7 @@ if(!class_exists('simpleNewsletter')) {
 
 		public function admin_scripts()
 		{
-			if( $_GET['page'] != 'simplenewsletter-grid' ){
+			if( isset($_GET['page']) && $_GET['page'] != 'simplenewsletter-grid' ){
 				return ;
 			}
 			
