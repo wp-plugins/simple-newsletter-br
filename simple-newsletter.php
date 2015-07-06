@@ -5,7 +5,7 @@
 /*
 Plugin Name: Simple Newsletter
 Description: Plugin de Newsletter com Double Opt-in
-Version: 0.4
+Version: 0.5
 Author: Robson Miranda
 Text Domain: simple-newsletter-br
 Domain Path: /languages

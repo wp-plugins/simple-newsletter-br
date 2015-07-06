@@ -3,7 +3,7 @@
 * Tags: Email, Newsletter, double opt-in, export, Email template, sidebar, shortcode
 * Requires at least: 4.0
 * Tested up to: 4.1.2
-* Stable tag: 0.1.1
+* Stable tag: 0.5
 * License: GPLv2 or later
 
 ##Description
