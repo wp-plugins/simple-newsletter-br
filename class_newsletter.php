@@ -20,6 +20,9 @@ class controllerNewsletter {
 
 	public function controllerNewsletter()
 	{
+		//Load the translation 0.5.1 modification
+		load_plugin_textdomain('simple-newsletter-br', FALSE, dirname(plugin_basename(__FILE__)).'/languages/');
+
 		global $wpdb;
 		$this->wpdb = $wpdb;
 		$this->success_message = get_option("simplenewsletter_successmessage");

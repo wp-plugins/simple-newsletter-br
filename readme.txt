@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Newsletter, Email, double opt-in, export CSV, Email template, widget, sidebar, shortcode
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 0.5
+Stable tag: 0.5.1
 License: GPLv2 or later
 
 Simple Newsletter, the easiest method to add newsletter subscription form. UNLIMITED subscriptions and tool to export the subscribers.
@@ -64,6 +64,11 @@ Its simple, add the shortcode where you want or add the widget to your sidebar
 == Changelog ==
 = Soon =
 * Global SMTP Tool
+
+= 0.5.1 =
+* Fixed JS problems on admin area
+* Fixed translated validation errors
+* Fixed Spinner problem
 
 = 0.5 =
 * Rebuild export screen

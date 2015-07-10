@@ -57,12 +57,12 @@ function loading(element, method)
 	if(method == 0)
 	{
 		$(element).show();
-		$(element).find('.simplenewsletter_spinner').hide();
+		$(element).parent().find('.simplenewsletter_spinner').hide();
 		return 0;
 	}
 	
 	$(element).hide();
-	$(element).find('.simplenewsletter_spinner').show();
+	$(element).parent().find('.simplenewsletter_spinner').show();
 	return 0;
 
 }
