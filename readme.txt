@@ -3,7 +3,7 @@ Contributors: ooprogramador
 Donate Link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4EVZYCQUEETWL
 Tags: Newsletter, Email, double opt-in, export CSV, Email template, widget, sidebar, shortcode
 Requires at least: 4.0
-Tested up to: 4.2.2
+Tested up to: 4.3
 Stable tag: 0.5.1
 License: GPLv2 or later
 
@@ -64,6 +64,8 @@ Its simple, add the shortcode where you want or add the widget to your sidebar
 == Changelog ==
 = Soon =
 * Global SMTP Tool
+* Cellphone support
+* Subscription channels
 
 = 0.5.1 =
 * Fixed JS problems on admin area
