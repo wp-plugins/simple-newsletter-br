@@ -17,7 +17,7 @@ Simple Newsletter, the easiest method to add newsletter subscription form. UNLIM
 
 Simple Newsletter is a plugin to generate a form to newsletter subscription, works with Jquery or without.
 
-Export all subscribers in csv with name and email, database validation to block two equals email.
+Export all subscribers in csv with name and email or cellphone, database validations.
 
 
 == Features ==
@@ -64,8 +64,10 @@ Its simple, add the shortcode where you want or add the widget to your sidebar
 == Changelog ==
 = Soon =
 * Global SMTP Tool
+
+= 0.7 =
 * Cellphone support
-* Subscription channels
+* Subscription Channels
 
 = 0.5.1 =
 * Fixed JS problems on admin area

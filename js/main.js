@@ -66,3 +66,6 @@ function loading(element, method)
 	return 0;
 
 }
+$(function(){
+	$("input").inputmask();
+});

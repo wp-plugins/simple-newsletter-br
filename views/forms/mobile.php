@@ -19,7 +19,7 @@
 			<fieldset class='simplenewsleter-field simplenewsleter-field-option'>
 				<select name='simplenewsletter[channel]'>
 						<?php
-						foreach( $terms as $key => $term){
+						foreach( $terms as $key => $term ){
 							echo "<option value='{$term->term_id}'>{$term->name}</option>";
 						}
 						?>
@@ -35,8 +35,8 @@
 			</fieldset>
 			<?php 
 		} ?>
-		<fieldset class='simplenewsleter-field simplenewsleter-field-email'>
-			<input name='simplenewsletter[email]' type='email' placeholder='<?php echo __("Email", 'simple-newsletter-br') ?>' />
+		<fieldset class='simplenewsleter-field simplenewsleter-field-cellphone'>
+			<input name='simplenewsletter[cellphone]' data-inputmask="'mask': '<?php echo get_option('simplenewsletter_mobilemask')  ?>'" type='text' placeholder='<?php echo __("Cellphone", 'simple-newsletter-br') ?>' />
 		</fieldset>
 		<input type="submit" value="<?php echo __("Send", 'simple-newsletter-br') ?>" class='simplenewsleter-field-submit' />
 	</form>

@@ -3,18 +3,31 @@ $emailList = new controllerNewsletter();
 ?>
 <div class="wrap">	
 	<div id="icon-options-general" class="icon32"></div>
-	<h2><?php printf(__("Last %d subscriptions", 'simple-newsletter-br'),$emailList->limit) ?></h2>
+	<h2><?php printf(__("Last %d subscriptions - Email", 'simple-newsletter-br'),$emailList->limit) ?></h2>
 
 	<div class="tablenav top">
 		<div class="alignleft actions bulkactions">
 			
-				<label for="bulk-action-selector-top" class="screen-reader-text"><?php echo __('Export', 'simple-newsletter-br'); ?></label>
-				<select name="action" id="exportMethod">
-					<option value="-1"><?php echo __('Export', 'simple-newsletter-br'); ?></option>
-					<option value="?sn_export_method=EXPORT_ALL"><?php echo __('All', 'simple-newsletter-br'); ?></option>
-					<option value="?sn_export_method=EXPORT_CONFIRMED"><?php echo __('Confirmed', 'simple-newsletter-br'); ?></option>
-				</select>
-				<input type="submit" id="doExport" class="button" value="<?php echo __('Download', 'simple-newsletter-br'); ?>">
+			<label for="bulk-action-selector-top" class="screen-reader-text"><?php echo __('Export', 'simple-newsletter-br'); ?></label>
+			<select name="action" id="exportMethod">
+				<option value="-1"><?php echo __('Export', 'simple-newsletter-br'); ?></option>
+				<option value="?sn_export_method=EXPORT_ALL"><?php echo __('All', 'simple-newsletter-br'); ?></option>
+				<option value="?sn_export_method=EXPORT_CONFIRMED"><?php echo __('Confirmed', 'simple-newsletter-br'); ?></option>
+			</select>
+			<input type='hidden' name='sn_type' id='exportType' value='email' />
+			<select name="channel" id="exportChannel">
+				<option value="-1"><?php echo __('Channel', 'simple-newsletter-br'); ?></option>
+				<?php
+				$terms = get_terms('sn_channels', array(
+					'orderby'    => 'name',
+					'hide_empty' => 0,
+					));
+				foreach( $terms as $key => $term){
+					echo "<option value='{$term->term_id}'>{$term->name}</option>";
+				}
+				?>
+			</select>
+			<input type="submit" id="doExport" class="button" value="<?php echo __('Download', 'simple-newsletter-br'); ?>">
 			
 		</div>
 		<br class="clear">
@@ -57,7 +70,7 @@ $emailList = new controllerNewsletter();
 						{
 							?>
 							<tr>
-								<td colspan="5"><center><?php __("No one subscriber found", 'simple-newsletter-br'); ?></center></td>
+								<td colspan="5"><center><?php echo __("No one subscriber found", 'simple-newsletter-br'); ?></center></td>
 							</tr>
 							<?php
 						}
@@ -90,7 +103,12 @@ $emailList = new controllerNewsletter();
 
 				</div> <!-- .meta-box-sortables -->
 
+				<?php // include('forms/admin_donation.php'); ?>
+
+
 			</div> <!-- #postbox-container-1 .postbox-container -->
+
+
 
 		</div> <!-- #post-body .metabox-holder .columns-2 -->
 

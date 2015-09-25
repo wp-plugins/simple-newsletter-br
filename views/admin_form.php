@@ -14,16 +14,6 @@
 					<div class="meta-box-sortables ui-sortable">
 
 						<div class="postbox">
-							<h3><span><?php echo __("Implementation", 'simple-newsletter-br'); ?></span></h3>
-							<div class="inside">
-								<p><?php echo __("Use the shortcode below where you want to show the subscription form.", 'simple-newsletter-br'); ?></p>
-								<code>[simplenewsletter]</code>
-								<p><?php echo __("The rest , set in the form here below.", 'simple-newsletter-br'); ?></p>
-							</div> <!-- .inside -->
-
-						</div> <!-- .postbox -->
-
-						<div class="postbox">
 							<h3><span><?php echo __("Configurations", 'simple-newsletter-br'); ?></span></h3>
 							<div class="inside">
 								<p></p>
@@ -86,8 +76,37 @@
 												</select>
 											</td>
 										</tr>
+
+										<tr valign="top">
+											<th scope="row"><?php echo __('Mobile Mask', 'simple-newsletter-br') ?></th>
+											<td>
+												<input name="simplenewsletter_mobilemask" id="" type="text" value="<?php echo get_option("simplenewsletter_mobilemask"); ?>" class="large-text" />
+												<p><?php echo __('Fill with the phone number mask of your region. Ex. (99) 99999-9999','simple-newsletter-br'); ?></p>
+											</td>
+										</tr>
+
 									</tbody>
 								</table>
+							</div> <!-- .inside -->
+
+						</div> <!-- .postbox -->
+
+						<div class="postbox">
+							<h3><span><?php echo __("Implementation", 'simple-newsletter-br'); ?></span></h3>
+							<div class="inside">
+								<p><?php echo __("Use the shortcode below where you want to show the subscription form.", 'simple-newsletter-br'); ?></p>
+								<code>[simplenewsletter]</code>
+								<p><?php echo __('You can customize the form passing some parameters on shortcode.', 'simple-newsletter-br'); ?></p>
+								<p><b><?php echo __('To show the mobile form:', 'simple-newsletter-br'); ?></b></p>
+								<code>[simplenewsletter type=mobile]</code>
+								<p><?php echo __('If you dont set the type parameter, the shortcode will show the email subscription form.', 'simple-newsletter-br'); ?></p>
+								<p><b><?php echo __('To hide the name field:', 'simple-newsletter-br'); ?></b></p>
+								<code>[simplenewsletter type=mobile name=false]</code>
+								<p><?php echo __('To show the name, just change to true', 'simple-newsletter-br'); ?></p>
+								<p><b><?php echo __('To show the channels options:', 'simple-newsletter-br'); ?></b></p>
+								<code>[simplenewsletter type=mobile channels=true]</code>
+								<p><b><?php echo __('To set the channel automatically, just put the channel slug on channel parameter:', 'simple-newsletter-br'); ?></b></p>
+								<code>[simplenewsletter type=mobile channel=my-channel-slug ]</code>
 							</div> <!-- .inside -->
 
 						</div> <!-- .postbox -->
