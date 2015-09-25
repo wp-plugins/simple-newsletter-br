@@ -1,0 +1,346 @@
+# Copyright (C) 2015 Simple Newsletter
+# This file is distributed under the same license as the Simple Newsletter package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Newsletter 0.5.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/simple-newsletter-br\n"
+"POT-Creation-Date: 2015-09-10 19:58:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-09-10 17:06-0300\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: class_newsletter.php:154
+msgid "Click here to confirm your email"
+msgstr "Clique aqui para confirmar seu email"
+
+#: class_newsletter.php:190
+msgid "Email Confirmation"
+msgstr "Confirmação de E-mail"
+
+#: class_newsletter.php:202
+msgid "Blank name is not allowed"
+msgstr "Preencha um nome"
+
+#: class_newsletter.php:207
+msgid "Please inform your cellphone number."
+msgstr "Por favor, informe o seu número de celular."
+
+#: class_newsletter.php:212
+msgid "Please inform a valid email"
+msgstr "Informe um email válido"
+
+#: simple-newsletter.php:63
+msgid "Simple Newsletter - Subscription Channels"
+msgstr "Simple Newsletter - Canais de assinatura"
+
+#: simple-newsletter.php:68 views/admin_grid-email.php:19
+#: views/admin_grid-mobile.php:18
+msgid "Channel"
+msgstr "Canal"
+
+#: simple-newsletter.php:69
+msgid "Popular"
+msgstr "Popular"
+
+#: simple-newsletter.php:70 views/admin_grid-email.php:14
+#: views/admin_grid-mobile.php:14 views/admin_grid.php:14
+msgid "All"
+msgstr "Todos"
+
+#: simple-newsletter.php:94
+msgid "Subscription Channels"
+msgstr "Canais de Assinatura"
+
+#: simple-newsletter.php:287
+msgid "Add the subscription form on widget area"
+msgstr "Adicionar o formulário de inscrição na área da widgets"
+
+#: simple-newsletter.php:309
+msgid "Type"
+msgstr "Tipo"
+
+#: simple-newsletter.php:310
+msgid "New title"
+msgstr "Título"
+
+#: simple-newsletter.php:311
+msgid "Box Text"
+msgstr "Texto da Caixa"
+
+#: simple-newsletter.php:314
+msgid "Type:"
+msgstr "Tipo:"
+
+#: simple-newsletter.php:315
+msgid "Title:"
+msgstr "Título:"
+
+#: simple-newsletter.php:317
+msgid "Box Text:"
+msgstr "Texto da Caixa:"
+
+#: views/admin_form.php:17
+msgid "Configurations"
+msgstr "Configurações"
+
+#: views/admin_form.php:23
+msgid "Double Opt-in (Confirmation)"
+msgstr "Double Opt-in (Confirmação)"
+
+#: views/admin_form.php:26
+msgid "Activated"
+msgstr "Ativado"
+
+#: views/admin_form.php:27
+msgid "Deactivated"
+msgstr "Desativado"
+
+#: views/admin_form.php:33
+msgid "Logo ( Full URL )"
+msgstr "Logo (URL Completa)"
+
+#: views/admin_form.php:40
+msgid "Show field \"Name\" ?"
+msgstr "Exibir campo \"Nome\"?"
+
+#: views/admin_form.php:43
+msgid "Yes"
+msgstr "Sim"
+
+#: views/admin_form.php:44
+msgid "No"
+msgstr "Não"
+
+#: views/admin_form.php:50
+msgid "Success Message"
+msgstr "Mensagem de Sucesso"
+
+#: views/admin_form.php:56
+msgid "Message to be displayed after confirmation"
+msgstr "Mensagem que será exibida após a confirmação"
+
+#: views/admin_form.php:63
+msgid "Body`s email text"
+msgstr "Texto do Email"
+
+#: views/admin_form.php:70
+msgid "Show Message"
+msgstr "Exibir Mensagem"
+
+#: views/admin_form.php:73
+msgid "Above subscription form"
+msgstr "Acima do Formulário"
+
+#: views/admin_form.php:74
+msgid "Below subscription form"
+msgstr "Abaixo do Formulário"
+
+#: views/admin_form.php:75
+msgid "Replace form"
+msgstr "Substituir Formulário"
+
+#: views/admin_form.php:81
+msgid "Mobile Mask"
+msgstr "Máscara para Celular"
+
+#: views/admin_form.php:84
+msgid "Fill with the phone number mask of your region. Ex. (99) 99999-9999"
+msgstr "Preencha com a Máscara de celular da sua região Ex. (99) 99999-9999"
+
+#: views/admin_form.php:95
+msgid "Implementation"
+msgstr "Implementação"
+
+#: views/admin_form.php:97
+msgid "Use the shortcode below where you want to show the subscription form."
+msgstr "Use o shortcode abaixo onde você quer mostrar o formulário de inscrição."
+
+#: views/admin_form.php:99
+msgid "You can customize the form passing some parameters on shortcode."
+msgstr "Você pode customizar o formulário passando alguns parâmetros no shortcode"
+
+#: views/admin_form.php:100
+msgid "To show the mobile form:"
+msgstr "Para mostrar o formulário de celular"
+
+#: views/admin_form.php:102
+msgid ""
+"If you dont set the type parameter, the shortcode will show the email "
+"subscription form."
+msgstr ""
+"Se você não passar o parâmetro tipo, o shortcode irá mostrar o formulário de "
+"assinatura por email."
+
+#: views/admin_form.php:103
+msgid "To hide the name field:"
+msgstr "Para esconder o campo nome:"
+
+#: views/admin_form.php:105
+msgid "To show the name, just change to true"
+msgstr "Para mostrar o nome, somente mude para true"
+
+#: views/admin_form.php:106
+msgid "To show the channels options:"
+msgstr "Para mostrar os canais de assinatura"
+
+#: views/admin_form.php:108
+msgid ""
+"To set the channel automatically, just put the channel slug on channel parameter:"
+msgstr ""
+"Para setar automaticamente o canal, somente coloque a slug do canal no parâmetro "
+"channel:"
+
+#: views/admin_form.php:115
+msgid "Doing your own mail template"
+msgstr "Fazendo seu próprio template de email"
+
+#: views/admin_form.php:117
+msgid ""
+"You can make your own html mail template and place the HTML file named "
+"'email_template.html' on root of your theme."
+msgstr ""
+"Você pode fazer seu próprio template HTML, somente coloque o arquivo com o nome "
+"'email_template.html' na raiz do seu tema."
+
+#: views/admin_form.php:118
+msgid "Use the bellow markups to show the data:"
+msgstr "Use as marcações abaixo para mostrar os dados:"
+
+#: views/admin_form.php:120
+msgid "Site Logo:"
+msgstr "Logotipo:"
+
+#: views/admin_form.php:121
+msgid "Name of subscriber:"
+msgstr "Nome do Assinante:"
+
+#: views/admin_form.php:122
+msgid "Email Text ( Configured on form above ):"
+msgstr "Texto do email ( Configurado no formulário acima ):"
+
+#: views/admin_form.php:123
+msgid "Confirmation Link:"
+msgstr "Link de Confirmação: "
+
+#: views/admin_form.php:124
+msgid "Site Link:"
+msgstr "Link do Site: "
+
+#: views/admin_form.php:125
+msgid "Site Name:"
+msgstr "Nome do Site: "
+
+#: views/admin_grid-email.php:6
+msgid "Last %d subscriptions - Email"
+msgstr "Últimos %d assinantes"
+
+#: views/admin_grid-email.php:11 views/admin_grid-email.php:13
+#: views/admin_grid-mobile.php:11 views/admin_grid-mobile.php:13
+#: views/admin_grid.php:11 views/admin_grid.php:13
+msgid "Export"
+msgstr "Exportar"
+
+#: views/admin_grid-email.php:15 views/admin_grid-email.php:49
+#: views/admin_grid-email.php:92 views/admin_grid.php:15 views/admin_grid.php:36
+#: views/admin_grid.php:79
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#: views/admin_grid-email.php:30 views/admin_grid-mobile.php:29
+#: views/admin_grid.php:17
+msgid "Download"
+msgstr "Download"
+
+#: views/admin_grid-email.php:46 views/admin_grid-mobile.php:45
+#: views/admin_grid.php:33 views/forms/cellphone.php:9 views/forms/email.php:34
+#: views/forms/mobile.php:34
+msgid "Name"
+msgstr "Nome"
+
+#: views/admin_grid-email.php:47 views/admin_grid.php:34 views/forms/email.php:39
+msgid "Email"
+msgstr "Email"
+
+#: views/admin_grid-email.php:48 views/admin_grid-mobile.php:47
+#: views/admin_grid.php:35
+msgid "Subscription date"
+msgstr "Data"
+
+#: views/admin_grid-email.php:73 views/admin_grid-mobile.php:69
+#: views/admin_grid.php:60
+msgid "No one subscriber found"
+msgstr "Nenhum assinante encontrado"
+
+#: views/admin_grid-email.php:88 views/admin_grid-mobile.php:84
+#: views/admin_grid.php:75
+msgid "Status"
+msgstr "Status"
+
+#: views/admin_grid-email.php:93 views/admin_grid.php:80
+msgid "Not confirmed"
+msgstr "Não Confirmados"
+
+#: views/admin_grid-email.php:95 views/admin_grid-mobile.php:88
+#: views/admin_grid.php:82
+msgid "Today"
+msgstr "Hoje"
+
+#: views/admin_grid-email.php:96 views/admin_grid-mobile.php:89
+#: views/admin_grid.php:83
+msgid "Yesterday"
+msgstr "Ontem"
+
+#: views/admin_grid-email.php:97 views/admin_grid-mobile.php:90
+#: views/admin_grid.php:84
+msgid "Last Week"
+msgstr "Durante a semana"
+
+#: views/admin_grid-email.php:98 views/admin_grid-mobile.php:91
+#: views/admin_grid.php:85
+msgid "All Time"
+msgstr "Todos"
+
+#: views/admin_grid-mobile.php:6
+msgid "Last %d subscriptions - Mobile"
+msgstr "Últimas %d assinantes"
+
+#: views/admin_grid-mobile.php:46 views/forms/cellphone.php:14
+#: views/forms/mobile.php:39
+msgid "Cellphone"
+msgstr "Celular"
+
+#: views/admin_grid.php:6
+msgid "Last %d subscriptions"
+msgstr "Últimos %d assinantes"
+
+#: views/forms/admin_donation.php:4
+msgid "Donation"
+msgstr "Doação"
+
+#: views/forms/admin_donation.php:7
+msgid ""
+"Help this simple programmer to keep this plugin ever updated and ever with new "
+"things"
+msgstr ""
+
+#: views/forms/cellphone.php:16 views/forms/email.php:41 views/forms/mobile.php:41
+msgid "Send"
+msgstr "Enviar"
+
+#. Plugin Name of the plugin/theme
+msgid "Simple Newsletter"
+msgstr "Simple Newsletter"
+
+#. Description of the plugin/theme
+msgid "Plugin de Newsletter com Double Opt-in"
+msgstr "Plugin de Newsletter com Double Opt-in"
+
+#. Author of the plugin/theme
+msgid "Robson Miranda"
+msgstr "Robson Miranda"
